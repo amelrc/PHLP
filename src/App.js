@@ -19,7 +19,7 @@ function App() {
           </tr>
         </thead>
         {fetchedData.map((item, ind) => (
-          <tbody>
+          <tbody key={ind}>
             <tr>
               <td>{item.street}</td>
               <td>{item.city}</td>
